@@ -1,28 +1,16 @@
 {
-  "name": "roots/bedrock",
+  "name": "WP Base",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
+  "description": "An opinionated boilerplate for web development with WordPress. ",
+  "homepage": "https://janchristlieb.de",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Jan Christlieb",
+      "email": "mail@janchristlieb.de",
+      "homepage": "https://github.com/jchristlieb"
     }
   ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
   "config": {
     "preferred-install": "dist"
   },
@@ -30,6 +18,22 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.7.7",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+        },
+        "require": {
+          "philippbaschke/acf-pro-installer": "^1.0",
+          "composer/installers": "^1.0"
+        }
+      }
     }
   ],
   "require": {
@@ -39,7 +43,14 @@
     "johnpbloch/wordpress": "4.9.8",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "roots/wp-config": "1.0.0"
+    "roots/wp-config": "1.0.0",
+    "wpackagist-plugin/contact-form-7": "^5.0.4",
+    "wpackagist-plugin/bootstrap-for-contact-form-7":"^1.4.8",
+    "wpackagist-plugin/regenerate-thumbnails": "^3.0.2",
+    "wpackagist-plugin/organize-media-library": "^6.05",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.6.10",
+    "wpackagist-plugin/show-current-template": "^0.3.0",
+    "finaldream/w3-total-cache": "0.9.4.6"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
