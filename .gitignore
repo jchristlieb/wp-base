@@ -20,3 +20,6 @@ vendor/
 
 #IDE settings
 .idea
+
+#Node
+node_modules
