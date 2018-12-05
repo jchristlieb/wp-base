@@ -1,10 +1,11 @@
+# paths relative to gulp.js (project root)
+
 css:
   sourceDir:
     - 'web/app/themes/base-theme/scss/'
   mainFile: 'main.scss'
-  watchDir: 'web/app/themes/wp-base/scss/**/*.scss'
-  destDir: 'web/app/themes/wp-base/assets/css'
-
+  watchDir: 'web/app/themes/base-theme/scss/**/*.scss'
+  destDir: 'web/app/themes/base-theme/assets/css'
 
 js:
   source:
@@ -16,7 +17,7 @@ browserSync:
   watchDir:
     - 'web/app/themes/base-theme/**/*.php'
     - 'web/app/themes/base-theme/**/*.js'
-  proxy: 'yorckshare.test'
+  proxy: 'wp-base.test'
   port: 3000
   ui:
     port: 3001
