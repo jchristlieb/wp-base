@@ -44,13 +44,13 @@
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "roots/wp-config": "1.0.0",
-    "wpackagist-plugin/contact-form-7": "^5.0.4",
     "wpackagist-plugin/bootstrap-for-contact-form-7":"^1.4.8",
     "wpackagist-plugin/regenerate-thumbnails": "^3.0.2",
     "wpackagist-plugin/organize-media-library": "^6.05",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.6.10",
     "wpackagist-plugin/show-current-template": "^0.3.0",
-    "finaldream/w3-total-cache": "0.9.4.6"
+    "finaldream/w3-total-cache": "0.9.4.6",
+    "wpackagist-plugin/contact-form-7": "^5.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
