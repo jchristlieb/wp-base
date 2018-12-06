@@ -3,20 +3,67 @@
 This is an opinionated boilerplate for web development with WordPress. It is build upon [Bedrock](https://github.com/roots/bedrock).
 
 ## Dependency management 
-We use tools to manage (install, update, delete) the PHP and JavaScript dependencies (e.g. WordPress Plugins, build tools) of the project.
+We use tools to manage (install, update, delete) the PHP and JavaScript dependencies of the project.
 
-### [Composer](https://getcomposer.org/) 
+#### [Composer](https://getcomposer.org/) 
 
-All PHP dependencies like plugins registered and maintained on [WordPress Packagist](https://wpackagist.org/) can be managed via `composer.json`.  
+PHP dependencies maintained on [WordPress Packagist](https://wpackagist.org/) are managed via `composer.json`.  
 
-* `composer.json` file is used to define (name and version) the projects PHP dependencies 
-* `composer update` -> update the defined plugins
-* install new plugins by adding them to `composer.json` requirements in this format: `"wpackist-plugin/name-of-plugin" : "version"`
-* if your desired plugin is not listed on wpackist.org, you can simply copy the repository into `/vendor` directory
+```
+// add install path of plugin into "require" section
 
-### [NPM](https://www.npmjs.com/) 
+"require": {
+    "wpackagist-plugin/contact-form-7": "^5.0.4",
+}
 
-All JavaScript dependencies like build tools and Bootstrap. 
-* `package.json` file is used to define (name and version) the projects JavaScript dependencies.
-* `npm install` -> update the pre-defined repositories 
-* `npm install [package-name]` -> install new repositories (search for packages and related documentation on [npmjs.com](https://www.npmjs.com/))
+// run an update
+composer update
+```
+
+If your desired plugin is not listed on wpackist.org, you can simply copy the repository into `/vendor` directory
+
+#### [NPM](https://www.npmjs.com/) 
+
+All JavaScript dependencies are managed via `package.json`. 
+
+```
+// update predefined repositories 
+npm install 
+
+// add a new repository to package.json
+npm install [package-name]
+
+```
+
+## Theme configuration 
+Theme files are located at `/web/app/themes/base-theme/`. Manage configuration with custom classes. 
+All classes are located within `/classes` directory. Setup of a basic class is as follows:
+
+```
+<?php 
+
+namespace YourNameSpace;
+
+class Theme 
+{
+    public function __constructor()
+    {
+        // define when the function should be executed
+        add_action('after_setup_theme', [$this, 'setup'] );
+    }
+    
+    public function setup()
+    {
+        add_theme_support('post-thumbnails');
+        add_image_size('1200x400', 1200,400);
+    }
+}
+```
+
+All classes need to be instantiated via `functions.php`
+
+```
+<?php 
+
+new \YourNameSpace\Theme();
+```
