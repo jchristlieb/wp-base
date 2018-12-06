@@ -2,7 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p>Footer Section 1</p>
+                <p>Footer Section 1
+                    <i class="fab fa-facebook-f"></i>
+                </p>
             </div>
             <div class="col-12">
                 <p>Footer Section 2</p>

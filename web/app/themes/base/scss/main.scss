@@ -6,6 +6,11 @@
 @import "colors";
 @import "typography";
 
+// import FontAwesome
+@import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome";
+@import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/light";
+@import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/brands";
+
 // default scss files
 @import "components/form";
 @import "components/button";

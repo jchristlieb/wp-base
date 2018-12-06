@@ -12,6 +12,11 @@ js:
     - './node_modules/bootstrap/dist/js/bootstrap.min.js'
   destDir: 'web/app/themes/base/assets/lib'
 
+fa:
+  source:
+    - './node_modules/@fortawesome/fontawesome-pro/webfonts/*'
+  destDir: 'web/app/themes/base/assets/fonts/webfonts/'
+
 
 browserSync:
   watchDir:

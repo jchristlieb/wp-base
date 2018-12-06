@@ -10,6 +10,7 @@
   "author": "Jan Christlieb",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.5.0",
     "autoprefixer": "^7.1.6",
     "browser-sync": "^2.24.4",
     "cssnano": "^3.10.0",
