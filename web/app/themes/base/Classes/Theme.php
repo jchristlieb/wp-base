@@ -1,6 +1,6 @@
 <?php
 
-namespace BaseTheme;
+namespace Base;
 
 class Theme
 {
@@ -9,7 +9,7 @@ class Theme
     {
         add_action('after_setup_theme', [$this, 'setup']);
         add_action('init', [$this, 'cleanup_wphead']);
-        add_action('after_setup_theme', [$this, 'remove_jason_api']);
+        add_action('after_setup_theme', [$this, 'remove_json_api']);
         add_action('init', [$this, 'remove_emoji']);
         add_action('init', [$this, 'remove_tinymce_emoji']);
     }
@@ -30,7 +30,7 @@ class Theme
            * If you're building a theme based on _s, use a find and replace
            * to change 'escape' to the name of your theme in all the template files.
            */
-        load_theme_textdomain('base-theme', get_template_directory() . '/languages');
+        load_theme_textdomain('base', get_template_directory() . '/languages');
 
 
         /*
@@ -110,7 +110,7 @@ class Theme
         // Remove oEmbed-specific JavaScript from the front-end and back-end.
         remove_action('wp_head', 'wp_oembed_add_host_js');
         // Remove all embeds rewrite rules.
-        //add_filter('rewrite_rules_array', 'disable_embeds_rewrites');
+        // add_filter('rewrite_rules_array', 'disable_embeds_rewrites');
         // Remove template redirect
         remove_action('template_redirect', 'rest_output_link_header', 11, 0);
     }

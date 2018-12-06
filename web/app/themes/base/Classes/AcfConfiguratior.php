@@ -1,6 +1,6 @@
 <?php
 
-namespace BaseTheme;
+namespace Base;
 
 class AcfConfiguratior
 {

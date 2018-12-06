@@ -2,22 +2,22 @@
 
 css:
   sourceDir:
-    - 'web/app/themes/base-theme/scss/'
+    - 'web/app/themes/base/scss/'
   mainFile: 'main.scss'
-  watchDir: 'web/app/themes/base-theme/scss/**/*.scss'
-  destDir: 'web/app/themes/base-theme/assets/css'
+  watchDir: 'web/app/themes/base/scss/**/*.scss'
+  destDir: 'web/app/themes/base/assets/css'
 
 js:
   source:
     - './node_modules/bootstrap/dist/js/bootstrap.min.js'
-  destDir: 'web/app/themes/base-theme/assets/lib'
+  destDir: 'web/app/themes/base/assets/lib'
 
 
 browserSync:
   watchDir:
-    - 'web/app/themes/base-theme/**/*.php'
-    - 'web/app/themes/base-theme/**/*.js'
-  proxy: 'wp-base.test'
+    - 'web/app/themes/base/**/*.php'
+    - 'web/app/themes/base/**/*.js'
+  proxy: 'base.test'
   port: 3000
   ui:
     port: 3001

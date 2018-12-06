@@ -1,6 +1,6 @@
 <?php
 
 // run an instance of Theme()
-new \BaseTheme\Theme();
+new \Base\Theme();
 // run an instance of AssetHandler()
-new \BaseTheme\AssetHandler();
+new \Base\AssetHandler();

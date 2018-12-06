@@ -6,15 +6,11 @@ var
     browserSync = require('browser-sync');
     sourceMaps = require('gulp-sourcemaps');
     autoprefixer = require('autoprefixer');
+    runSequence = require('run-sequence');
     yaml = require('js-yaml');
     fs = require('fs');
     config = yaml.safeLoad(fs.readFileSync('./build/config.yml', 'utf-8'));
 
-// if (fs.existsSync('./build/config.yml')) {
-//     let localConfig = yml.safeLoad(fs.readFileSync('./build/config.yml', 'utf-8'));
-//     config = Object.assign(config, localConfig);
-//     console.log(config);
-// }
 
 gulp.task('compileScss', function () {
     // get main.scss file
@@ -34,21 +30,51 @@ gulp.task('compileScss', function () {
 });
 
 gulp.task('browserSync', function () {
-
+        // initiate a browser session
+        browserSync.init({
+            proxy: config.browserSync.proxy,
+            port: config.browserSync.port,
+            ui: {
+                port: config.browserSync.ui.port,
+            }
+        })
 });
 
-gulp.task('copyJS', function () {
-
+gulp.task('copyJs', function () {
+        // copy all 3rd party JS dependencies to destDir
+        gulp.src(config.js.source)
+            .pipe(gulp.dest(config.js.destDir))
 });
 
 gulp.task('watch', function () {
-
+        // run compileCss if .scss files change
+        gulp.watch(config.css.watchDir, ['compileScss'])
+        // reload browser each time a change happened
+        gulp.watch(config.browserSync.watchDir).on('change', browserSync.reload)
 });
 
 gulp.task('clean', function () {
-
+    return gulp.src([
+        config.css.destDir,
+        config.js.destDir
+    ], {read: false})
+        .pipe(clean());
 });
 
-gulp.task('build', function () {
-
+// special stream for deployment triggered through fabfile.py
+gulp.task('build', ['clean'], function (callback) {
+    return runSequence(
+        'browserSync',
+        ['compileScss', 'copyJs'],
+        callback)
 });
+
+gulp.task('buildWatch', ['clean'], function (callback) {
+    return runSequence(
+        'browserSync',
+        ['compileScss', 'copyJs'],
+        'watch', callback)
+});
+
+// make 'buildWatch' default stream
+gulp.task('default', ['buildWatch'], function(){});
