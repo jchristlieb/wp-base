@@ -1,0 +1,280 @@
+// check paletton.com for colors
+// Greys - text, backgrounds, panels, form controls
+
+$grey-10: #FFFFFF;
+$grey-30: #FAFAFA;
+$grey-40: #E5DECE;
+$grey-50: grey;
+$grey-60: #505F6D;
+$grey-70: #4B4F58;
+$grey-90: #383B43;
+
+// Primary - 1 to 2 colors in 5-10 shades from light to dark.
+// For primary actions, emphasizing nav elements, etc
+
+$primary-10: #045;
+$primary-30: #98B188;
+$primary-50: #4A833F;
+$primary-70: #045;
+$primary-90: #045;
+
+
+// Accent - up to ten colors in 5-10 shades each.
+// Used to highlight certain features, warnings, positive actions, etc
+
+$danger-accent-10: red;
+$danger-accent-30: red;
+$danger-accent-50: red;
+$danger-accent-70: red;
+$danger-accent-90: red;
+
+$success-accent-10: green;
+$success-accent-30: green;
+$success-accent-50: green;
+$success-accent-70: green;
+$success-accent-90: green;
+
+$warning-accent-10: yellow;
+$warning-accent-30: yellow;
+$warning-accent-50: yellow;
+$warning-accent-70: yellow;
+$warning-accent-90: yellow;
+
+$info-accent-10: blue;
+$info-accent-30: blue;
+$info-accent-50: blue;
+$info-accent-70: blue;
+$info-accent-90: blue;
+
+
+// classes for text and background in all previous defined shapes
+
+// grey
+
+.text-grey-10 {
+  color: $grey-10!important;
+}
+.bg-grey-10 {
+  background-color: $grey-10!important;
+}
+
+.text-grey-30 {
+  color: $grey-30!important;
+}
+.bg-grey-30 {
+  background-color: $grey-30!important;
+}
+
+.text-grey-40 {
+  color: $grey-40!important;
+}
+.bg-grey-40 {
+  background-color: $grey-40!important;
+}
+
+.text-grey-50 {
+  color: $grey-50!important;
+}
+.bg-grey-50 {
+  background-color: $grey-50!important;
+}
+
+.text-grey-60 {
+  color: $grey-60!important;
+}
+.bg-grey-60 {
+  background-color: $grey-60!important;
+}
+
+.text-grey-70 {
+  color: $grey-70!important;
+}
+.bg-grey-70 {
+  background-color: $grey-70!important;
+}
+
+.text-grey-90 {
+  color: $grey-90!important;
+}
+.bg-grey-90 {
+  background-color: $grey-90!important;
+}
+
+// primary
+
+.text-primary-10 {
+  color: $primary-10!important;
+}
+.bg-primary-10 {
+  background-color: $primary-10!important;
+}
+
+.text-primary-30 {
+  color: $primary-30!important;
+}
+.bg-primary-30 {
+  background-color: $primary-30!important;
+}
+
+.text-primary-50 {
+  color: $primary-50!important;
+}
+.bg-primary-50 {
+  background-color: $primary-50!important;
+}
+
+.text-primary-70 {
+  color: $primary-70!important;
+}
+.bg-primary-70 {
+  background-color: $primary-70!important;
+}
+
+.text-primary-90 {
+  color: $primary-90!important;
+}
+.bg-primary-90 {
+  background-color: $primary-90!important;
+}
+
+
+// accent danger
+
+.text-danger-accent-10 {
+  color: $danger-accent-10!important;
+}
+.bg-danger-accent-10 {
+  background-color: $danger-accent-10!important;
+}
+
+.text-danger-accent-30 {
+  color: $danger-accent-30!important;
+}
+.bg-danger-accent-30 {
+  background-color: $danger-accent-30!important;
+}
+
+.text-danger-accent-50 {
+  color: $danger-accent-50!important;
+}
+.bg-danger-accent-50 {
+  background-color: $danger-accent-50!important;
+}
+
+.text-danger-accent-70 {
+  color: $danger-accent-70!important;
+}
+.bg-danger-accent-70 {
+  background-color: $danger-accent-70!important;
+}
+
+.text-danger-accent-90 {
+  color: $danger-accent-90!important;
+}
+.bg-danger-accent-90 {
+  background-color: $danger-accent-90!important;
+}
+
+// accent success
+
+.text-success-accent-10 {
+  color: $success-accent-10!important;
+}
+.bg-success-accent-10 {
+  background-color: $success-accent-10!important;
+}
+
+.text-success-accent-30 {
+  color: $success-accent-30!important;
+}
+.bg-success-accent-30 {
+  background-color: $success-accent-30!important;
+}
+
+.text-success-accent-50 {
+  color: $success-accent-50!important;
+}
+.bg-success-accent-70 {
+  background-color: $success-accent-70!important;
+}
+
+.text-success-accent-90 {
+  color: $success-accent-90!important;
+}
+.bg-success-accent-90 {
+  background-color: $success-accent-90!important;
+}
+
+// accent warning
+
+.text-warning-accent-10 {
+  color: $warning-accent-10!important;
+}
+.bg-warning-accent-10 {
+  background-color: $warning-accent-10!important;
+}
+
+.text-warning-accent-30 {
+  color: $warning-accent-30!important;
+}
+.bg-warning-accent-30 {
+  background-color: $warning-accent-30!important;
+}
+
+.text-warning-accent-50 {
+  color: $warning-accent-50!important;
+}
+.bg-warning-accent-50 {
+  background-color: $warning-accent-50!important;
+}
+
+.text-warning-accent-70 {
+  color: $warning-accent-70!important;
+}
+.bg-warning-accent-70 {
+  background-color: $warning-accent-70!important;
+}
+
+.text-warning-accent-90 {
+  color: $warning-accent-90!important;
+}
+.bg-warning-accent-90 {
+  background-color: $warning-accent-90!important;
+}
+
+// accent info
+
+.text-info-accent-10 {
+  color: $info-accent-10!important;
+}
+.bg-info-accent-10 {
+  background-color: $info-accent-10!important;
+}
+
+.text-info-accent-30 {
+  color: $info-accent-30!important;
+}
+.bg-info-accent-30 {
+  background-color: $info-accent-30!important;
+}
+
+.text-info-accent-50 {
+  color: $info-accent-50!important;
+}
+.bg-info-accent-50 {
+  background-color: $info-accent-50!important;
+}
+
+.text-info-accent-70 {
+  color: $info-accent-70!important;
+}
+.bg-info-accent-70 {
+  background-color: $info-accent-70!important;
+}
+
+.text-info-accent-90 {
+  color: $info-accent-90!important;
+}
+.bg-info-accent-90 {
+  background-color: $info-accent-90!important;
+}

@@ -1,0 +1,21 @@
+// third party files
+@import "../../../../../node_modules/bootstrap/scss/bootstrap";
+
+// variable files
+@import "variables";
+@import "colors";
+@import "typography";
+
+// import FontAwesome
+@import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome";
+@import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/light";
+@import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/brands";
+
+// default scss files
+@import "components/form";
+@import "components/button";
+@import "components/carousel";
+@import "components/image";
+@import "sections/footer";
+@import "sections/main-nav";
+@import "sections/global";
