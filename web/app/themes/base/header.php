@@ -13,6 +13,10 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+    <!--  ATTENTION remove the noindex for client projects  -->
+    <meta name="robots" content="noindex" />
+    <!--  ATTENTION remove the noindex for client projects  -->
+
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
