@@ -16,9 +16,17 @@ get_header();
 get_template_part('templates/main-nav');
 ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="test-class site-main container">
-            <h1>Hello World</h1>
+    <div id="primary">
+        <main id="main" class="container">
+
+            <div class="container-sm">
+                <?php get_template_part('templates/acf_intro') ?>
+            </div>
+
+            <div class="container">
+                <?php get_template_part('templates/acf_teaser') ?>
+            </div>
+
         </main>
     </div>
 

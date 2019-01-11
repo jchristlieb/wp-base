@@ -12,6 +12,7 @@ class Theme
         add_action('after_setup_theme', [$this, 'remove_json_api']);
         add_action('init', [$this, 'remove_emoji']);
         add_action('init', [$this, 'remove_tinymce_emoji']);
+        add_filter('get_the_archive_title', [$this, 'my_theme_archive_title']);
     }
 
     /**
@@ -135,6 +136,23 @@ class Theme
         return array_diff($plugins, [
             'wpemoji',
         ]);
+    }
+
+    function my_theme_archive_title($title)
+    {
+        if (is_category()) {
+            $title = single_cat_title('', false);
+        } elseif (is_tag()) {
+            $title = single_tag_title('', false);
+        } elseif (is_author()) {
+            $title = '<span class="vcard">' . get_the_author() . '</span>';
+        } elseif (is_post_type_archive()) {
+            $title = post_type_archive_title('', false);
+        } elseif (is_tax()) {
+            $title = single_term_title('', false);
+        }
+
+        return $title;
     }
 
 

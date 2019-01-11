@@ -9,6 +9,7 @@
 // import FontAwesome
 @import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome";
 @import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/light";
+@import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/solid";
 @import "../../../../../node_modules/@fortawesome/fontawesome-pro/scss/brands";
 
 // default scss files
@@ -16,6 +17,8 @@
 @import "components/button";
 @import "components/carousel";
 @import "components/image";
+@import "components/card";
+@import "components/shadow";
 @import "sections/footer";
 @import "sections/main-nav";
 @import "sections/global";

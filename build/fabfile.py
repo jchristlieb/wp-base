@@ -173,7 +173,7 @@ def production():
 @fab.task
 def staging():
   fab.env.git = _deploy_git_factory()(
-    remote_repository_path='/home/www/p461519/html/wp-base.janchristlieb.de',  ######### add path to remote server
+    remote_repository_path='/home/www/p461591/html/wp-base.janchristlieb.de',  ######### add path to remote server
     release_branch='staging',
   )
 

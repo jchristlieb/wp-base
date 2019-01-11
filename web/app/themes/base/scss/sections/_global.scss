@@ -1,0 +1,26 @@
+.container-md {
+  @extend .container;
+  max-width: 800px;
+}
+
+.container-sm {
+  @extend .container;
+  max-width: 600px;
+}
+
+.jumbotron {
+  background-color: transparent;
+  padding: 10px;
+}
+
+a.mtcs {
+  color: #6c757d;
+  &:hover {
+    border-bottom: 1px solid #6c757d;
+    text-decoration: none;
+  }
+}
+
+.fa-heart {
+  color: darkred;
+}

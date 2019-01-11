@@ -1,22 +1,30 @@
-// check paletton.com for colors
-// Greys - text, backgrounds, panels, form controls
+.bg-white {
+  background-color: white;
+}
 
-$grey-10: #FFFFFF;
-$grey-30: #FAFAFA;
-$grey-40: #E5DECE;
-$grey-50: grey;
-$grey-60: #505F6D;
-$grey-70: #4B4F58;
-$grey-90: #383B43;
+// blue grey
+$neutral-10: #F0F4F8;
+$neutral-20: #D9E2EC;
+$neutral-30: #BCCCDC;
+$neutral-40: #9FB3C8;
+$neutral-50: #829AB1;
+$neutral-60: #627D98;
+$neutral-70: #486581;
+$neutral-80: #334E68;
+$neutral-90: #243B53;
+$neutral-100: #102a43;
 
-// Primary - 1 to 2 colors in 5-10 shades from light to dark.
-// For primary actions, emphasizing nav elements, etc
-
-$primary-10: #045;
-$primary-30: #98B188;
-$primary-50: #4A833F;
-$primary-70: #045;
-$primary-90: #045;
+// lime green
+$primary-10: #f2fde0;
+$primary-20: #e3f7c2;
+$primary-30: #c7ea8f;
+$primary-40: #abdb5e;
+$primary-50: #94c843;
+$primary-60: #7bb026;
+$primary-70: #63921a;
+$primary-80: #507712;
+$primary-90: #42600c;
+$primary-100: #2b4005;
 
 
 // Accent - up to ten colors in 5-10 shades each.
@@ -49,55 +57,76 @@ $info-accent-90: blue;
 
 // classes for text and background in all previous defined shapes
 
-// grey
+// neutral
 
-.text-grey-10 {
-  color: $grey-10!important;
+.text-neutral-10 {
+  color: $neutral-10!important;
 }
-.bg-grey-10 {
-  background-color: $grey-10!important;
-}
-
-.text-grey-30 {
-  color: $grey-30!important;
-}
-.bg-grey-30 {
-  background-color: $grey-30!important;
+.bg-neutral-10 {
+  background-color: $neutral-10!important;
 }
 
-.text-grey-40 {
-  color: $grey-40!important;
+.text-neutral-20 {
+  color: $neutral-20!important;
 }
-.bg-grey-40 {
-  background-color: $grey-40!important;
-}
-
-.text-grey-50 {
-  color: $grey-50!important;
-}
-.bg-grey-50 {
-  background-color: $grey-50!important;
+.bg-neutral-20 {
+  background-color: $neutral-20!important;
 }
 
-.text-grey-60 {
-  color: $grey-60!important;
+.text-neutral-30 {
+  color: $neutral-30!important;
 }
-.bg-grey-60 {
-  background-color: $grey-60!important;
-}
-
-.text-grey-70 {
-  color: $grey-70!important;
-}
-.bg-grey-70 {
-  background-color: $grey-70!important;
+.bg-neutral-30 {
+  background-color: $neutral-30!important;
 }
 
-.text-grey-90 {
-  color: $grey-90!important;
+.text-neutral-40 {
+  color: $neutral-40!important;
 }
-.bg-grey-90 {
-  background-color: $grey-90!important;
+.bg-neutral-40 {
+  background-color: $neutral-40!important;
+}
+
+.text-neutral-50 {
+  color: $neutral-50!important;
+}
+.bg-neutral-50 {
+  background-color: $neutral-50!important;
+}
+
+.text-neutral-60 {
+  color: $neutral-60!important;
+}
+.bg-neutral-60 {
+  background-color: $neutral-60!important;
+}
+
+.text-neutral-70 {
+  color: $neutral-70!important;
+}
+.bg-neutral-70 {
+  background-color: $neutral-70!important;
+}
+
+.text-neutral-80 {
+  color: $neutral-80!important;
+}
+.bg-neutral-80 {
+  background-color: $neutral-80!important;
+}
+
+.text-neutral-90 {
+  color: $neutral-90!important;
+}
+.bg-neutral-90 {
+  background-color: $neutral-90!important;
+}
+
+.text-neutral-100 {
+  color: $neutral-100!important;
+}
+.bg-neutral-100 {
+  background-color: $neutral-100!important;
 }
 
 // primary
@@ -109,11 +138,25 @@ $info-accent-90: blue;
   background-color: $primary-10!important;
 }
 
+.text-primary-20 {
+  color: $primary-20!important;
+}
+.bg-primary-20 {
+  background-color: $primary-20!important;
+}
+
 .text-primary-30 {
   color: $primary-30!important;
 }
 .bg-primary-30 {
   background-color: $primary-30!important;
+}
+
+.text-primary-40 {
+  color: $primary-40!important;
+}
+.bg-primary-40 {
+  background-color: $primary-40!important;
 }
 
 .text-primary-50 {
@@ -123,6 +166,13 @@ $info-accent-90: blue;
   background-color: $primary-50!important;
 }
 
+.text-primary-60 {
+  color: $primary-60!important;
+}
+.bg-primary-60 {
+  background-color: $primary-60!important;
+}
+
 .text-primary-70 {
   color: $primary-70!important;
 }
@@ -130,11 +180,25 @@ $info-accent-90: blue;
   background-color: $primary-70!important;
 }
 
+.text-primary-80 {
+  color: $primary-80!important;
+}
+.bg-primary-80 {
+  background-color: $primary-80!important;
+}
+
 .text-primary-90 {
   color: $primary-90!important;
 }
 .bg-primary-90 {
   background-color: $primary-90!important;
+}
+
+.text-primary-100 {
+  color: $primary-100!important;
+}
+.bg-primary-100 {
+  background-color: $primary-100!important;
 }
 
 

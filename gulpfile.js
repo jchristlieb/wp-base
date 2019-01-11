@@ -90,7 +90,6 @@ gulp.task('clean', function () {
 // special stream for deployment triggered through fabfile.py
 gulp.task('build', ['clean'], function (callback) {
     return runSequence(
-        'browserSync',
         ['compileScssProduction', 'copyJs', 'copyFa'],
         callback)
 });

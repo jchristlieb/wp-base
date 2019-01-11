@@ -2,6 +2,17 @@
 
 This is an opinionated boilerplate for web development with WordPress. It is build upon [Bedrock](https://github.com/roots/bedrock).
 
+## Setup
+In order to use this starter theme for your next project you need to make the following configurations:
+
+1. `git clone git@github.com:jchristlieb/wp-base.git 'projectname'`
+2. `npm install` -> loads the `package.json` dependencies
+3. `composer update` -> loads the `composer.json` dependencies
+    * to install the ACF pro plugin you need to deposit your key within your `.env` file 
+    * if you do not have your own key, visit [ACF website](https://www.advancedcustomfields.com/) to get your pro version or use the free version instead and update the `composer.json` dependency accordingly. 
+2. `cp .env.example .env` // set up your database connection and localhost in .env
+3. `/build/config.yml` // adjust proxy to your localhost address
+
 ## Dependency management 
 We use tools to manage (install, update, delete) the PHP and JavaScript dependencies of the project.
 

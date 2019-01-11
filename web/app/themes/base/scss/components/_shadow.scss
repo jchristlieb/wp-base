@@ -1,0 +1,11 @@
+.shadow-effect {
+  box-shadow: 0 5px 5px 0 $neutral-20;
+}
+
+
+.shadow-hover-effect {
+  @extend .shadow-effect;
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
